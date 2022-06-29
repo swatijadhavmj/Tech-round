@@ -1,0 +1,182 @@
+.aside {
+    &-info {
+
+        .form-element {
+            border-radius: 3px;
+            overflow: hidden;
+            border: 1px solid var(--alert-color);
+            background-color: var(--alert-color);
+            height: 20px;
+
+            .aside-icon {
+                font-size: 10px;
+                color: var(--neutral-color6);
+            }
+        }
+
+        .formcontrol {
+            font-size: 12px;
+            border: none;
+            color: var(--neutral-color3);
+            background-color: var(--neutral-color6);
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: var(--neutral-color3);
+            }
+        }
+
+        .aside-icon {
+            font-size: 12px;
+            color: var(--brand-color);
+        }
+
+        .card-header {
+            padding: 5px 0 10px;
+            border-bottom: 1px solid var(--neutral-color4);
+            background-color: var(--neutral-color6);
+        }
+
+        .card-title {
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: var(--neutral-color3);
+        }
+
+        .list-group {
+            background-color: var(--neutral-color6);
+        }
+
+        .group-item-inner {
+            flex-basis: calc(50% - 10px);
+            min-width: 50%;
+            position: relative;
+
+            &:not(:nth-child(even)) {
+                margin-right: 10px;
+                border-right: 1px solid var(--neutral-color4);
+                padding-right: 10px;
+            }
+        }
+
+        .list-group-item {
+            padding: 5px 0;
+            background-color: var(--neutral-color6);
+            border-bottom: 1px solid var(--neutral-color4);
+
+        }
+
+        .list-group-title {
+            @extend .card-title;
+            font-size: 12px;
+        }
+
+        .list-group-desc {
+            font-size: 14px;
+            line-height: 16px;
+            color: var(--input-color);
+        }
+
+        .group-two {
+            .list-group-desc {
+
+                color: var(--neutral-color3);
+            }
+
+        }
+
+        .aside-btn {
+            background-color: var(--neutral-color6);
+        }
+
+        .collapsed-item {
+            .collapsed-text {
+                font-size: 12px;
+                border-radius: 2px;
+                padding: 2px 5px;
+                color: var(--neutral-color2);
+                background-color: var(--semantic-color);
+            }
+
+        }
+    }
+}
+
+.section-head {
+    &-item {
+        @extend .custom-card;
+
+    }
+
+    &-title {
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--neutral-color1);
+        padding-bottom: 5px;
+
+    }
+
+    &-content {
+        font-size: 14px;
+        line-height: 16px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        color: var(--neutral-color3);
+
+    }
+}
+
+.main-content {
+    &-item {
+        @extend .custom-card;
+        flex-basis: calc(20% - 8px);
+        margin: 0 10px 10px 0;
+
+        &:nth-child(5n) {
+            margin-right: 0;
+        }
+    }
+
+    &-icon {
+        font-size: 12px;
+        padding: 10px;
+        width: 43px;
+        height: 43px;
+        border-radius: 2px;
+        text-align: center;
+        color: var(--neutral-color5);
+        background-color: var(--brand-color);
+    }
+
+    &-title {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        padding: 12px 0;
+        height: 50px;
+        color: var(--neutral-color3);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    &-desc {
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--input-color);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+}

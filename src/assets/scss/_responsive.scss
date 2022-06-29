@@ -1,0 +1,25 @@
+@media screen and (min-width: 320px) and (max-width:992px) {
+    .aside-info {
+        .list-group-desc {
+            font-size: 12px;
+        }
+    }
+
+    .main-content {
+        &-item {
+            @extend .custom-card;
+            flex-basis: calc(50% - 5px);
+            margin: 0 10px 10px 0;
+
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+
+            &:nth-child(5) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:767px) {}

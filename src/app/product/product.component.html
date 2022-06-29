@@ -1,0 +1,147 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <header class="pt-4 pb-3 d-flex align-items-center justify-content-between flex-md-row flex-column">
+        <div class="brand">
+          <h1 class="page-title">Lorem Ipsum dolor sit amet</h1>
+        </div>
+        <div class="theme-actions pt-md-0 pt-3">
+          <button class="btn-outline mr-2" (click)="changeTheme('light')">Lorem Ipsum</button>
+          <button class="btn-fill" (click)="changeTheme('dark')">Lorem Ipsum</button>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 pr-md-0">
+      <div class="aside-info py-2">
+        <div class="card custom-card mb-2">
+          <div class="card-header px-0 d-flex align-items-center justify-content-between">
+            <h3 class="card-title mb-0">Lorem Ipsum</h3>
+            <a class="card-edit" href="javascript:void(0)" ><i class="fas fa-pen"></i></a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex flex-lg-row pb-2">
+              <div class="group-item-inner">
+                <h4 class="list-group-title mb-0">Loreum Ipsum</h4>
+              <div class="form-element d-flex align-items-stretch">
+                <span class="aside-icon d-flex align-items-center p-2">
+                  <i class="fas fa-pen"></i>
+                </span>
+                <input type="text" class="formcontrol" placeholder="Loreum Ipsum"/>
+              </div>
+              </div>
+              <div class="group-item-inner">
+                <h4 class="list-group-title mb-0">Loreum Ipsum</h4>
+                <div class="d-flex align-items-center">
+                  <span class="aside-icon d-flex align-items-center pr-2">
+                    <i class="fas fa-shield-alt"></i>
+                  </span>
+                  <p class="list-group-desc">Loreum Ipsum</p>
+                </div>
+              </div>
+            </li>
+            <li class="ist-group-item group-two d-flex flex-lg-row pt-2">
+              <div class="group-item-inner ">
+                <h4 class="list-group-title mb-0">Loreum Ipsum</h4>
+                <div class="d-flex align-items-center">
+                  <span class="aside-icon d-flex align-items-center pr-2">
+                    <i class="fas fa-money-bill-wave"></i>
+                  </span>
+                  <p class="list-group-desc">Loreum</p>
+                </div>
+              </div>
+              <div class="group-item-inner">
+                <h4 class="list-group-title mb-0">Loreum Ipsum</h4>
+                <div class="d-flex align-items-center">
+                  <span class="aside-icon d-flex align-items-center pr-2">
+                    <i class="fas fa-money-bill-wave"></i>
+                  </span>
+                  <p class="list-group-desc">000.000,00
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="card custom-card card-accord">
+          <div class="card-header px-0 d-flex align-items-center justify-content-between">
+            <h3 class="card-title mb-0">Lorem Ipsum</h3>
+            <a class="card-edit" href="javascript:void(0)" ><i class="fas fa-pen"></i></a>
+          </div>
+          <ul class="list-group list-group-flush py-2 mb-1">
+            <li class="list-group-item d-flex flex-lg-row pb-2 border-0">
+              <a href="javascript:void(0)" class="collapse-item-header w-100 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span class="numcount count-hold d-flex align-items-center justify-content-center">8</span>
+                  <p class="list-group-desc ml-3">Loreum Ipsum</p>
+                </div>
+                <span class="collapse-icon"><i class="fas fa-angle-down"></i></span>
+              </a>
+              
+            </li>
+
+            <li class="list-group-item pb-2 border-0">
+              <a href="javascript:void(0)" class="collapse-item-header w-100 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span class="numcount count-warning d-flex align-items-center justify-content-center">2</span>
+                  <p class="list-group-desc ml-3">Loreum Ipsum</p>
+                </div>
+                <span class="collapse-icon"><i class="fas fa-angle-up"></i></span>
+              </a>
+                <ul>
+                  <li class="collapsed-item">
+                    <div class="d-flex align-items-center">
+                      <span class="numcount d-flex align-items-center justify-content-center"></span>
+                      <p class="list-group-desc collapsed-text ml-3">Loreum Ipsum</p>
+                    </div>
+                  </li>
+                </ul>
+            </li>
+           
+            <li class="list-group-item pb-2">
+              <a href="javascript:void(0)" class="collapse-item-header w-100 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span class="numcount count-success d-flex align-items-center justify-content-center">0</span>
+                  <p class="list-group-desc ml-3">Loreum Ipsum</p>
+                </div>
+                <span class="collapse-icon"><i class="fas fa-angle-down"></i></span>
+              </a>
+              
+            </li>
+          </ul>
+
+          <button type="submit" class="aside-btn btn btn-outline mt-2">Lorem Ipsum</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 pl-lg-2">
+      <section class="section-main">
+        <div class="section-head py-2 d-flex align-items-center flex-md-row flex-column">
+          <div *ngFor="let cost of costList;" class="section-head-item w-100 flex-md-fill mr-md-2 mb-md-0 mb-2">
+            <h3 class="section-head-title">{{cost.costAmount}}</h3>
+            <p class="section-head-content">{{cost.CostDesc}}</p>
+          </div>
+         
+        </div>
+        <section class="section-body">
+          <div class="main-content-list d-flex align-items-center flex-wrap ">
+            
+            <div *ngFor="let product of productList;" class="main-content-item">
+              <a href="javascript:void(0)">
+                <div class="main-content-icon d-flex align-items-center justify-content-center" >
+                  <span><i [class]=product.productIcon></i></span>
+                </div>
+                <h3 class="main-content-title">{{product.productName}}</h3>
+                <p class="main-content-desc">
+                  {{product.productDesc}}
+                </p>
+              </a>
+            </div>
+            
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
+</div>
